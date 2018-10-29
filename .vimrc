@@ -15,7 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
@@ -33,11 +33,11 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_global_ycm_extra_conf = '/home/philipp/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 
 " Nerdtree
-let NERDTreeMapOpenInTab='<Return>' " let nerdtree open file in new tab
-let NERDTreeShowHidden=1 " let nerdtree show dotfiles also
-autocmd vimenter * NERDTree " start NerdTree on vim start
-autocmd VimEnter * wincmd p "focus file on start
-autocmd BufEnter * lcd %:p:h " set wd to current files path
+" let NERDTreeMapOpenInTab='<Return>' " let nerdtree open file in new tab
+" let NERDTreeShowHidden=1 " let nerdtree show dotfiles also
+" autocmd vimenter * NERDTree " start NerdTree on vim start
+" autocmd VimEnter * wincmd p "focus file on start
+" autocmd BufEnter * lcd %:p:h " set wd to current files path
 
 " syntastic
 set statusline+=%#warningmsg#
