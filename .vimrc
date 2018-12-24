@@ -125,7 +125,7 @@ nnoremap <S-H> <C-W><C-H>
 " ----------------------------------------------------------------------
 
 " -------------------------- Language specific -------------------------
-au BufNewFile,BufRead *.py,*.c
+au BufNewFile,BufRead *.py,*.c,*.java
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
