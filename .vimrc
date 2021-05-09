@@ -7,8 +7,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" add all your plugins here (note older versions of Vundle
-" used Bundle instead of Plugin)
+" add all your plugins here (note older versions of Vundle " used Bundle instead of Plugin)
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -33,7 +32,7 @@ filetype plugin indent on    " required
 "let g:ycm_global_ycm_extra_conf = '/home/philipp/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 
 " Nerdtree
-let NERDTreeMapOpenInTab='<Return>' " let nerdtree open file in new tab
+"let NERDTreeMapOpenInTab='<Return>' " let nerdtree open file in new tab
 let NERDTreeShowHidden=1 " let nerdtree show dotfiles also
 autocmd vimenter * NERDTree " start NerdTree on vim start
 
@@ -76,7 +75,7 @@ nnoremap <S-q> :qa <Enter>
 nnoremap t gt
 nnoremap T gT
 nnoremap gt <Nop>
-nnoremap gT <Nop>
+noremap gT <Nop>
 
 " move lines
 nnoremap <C-j> :m .+1<CR>==
@@ -140,4 +139,12 @@ au BufNewFile,BufRead *.py,*.c,*.java
     \ set autoindent |
     \ set fileformat=unix |
 
+au BufNewFile,BufRead *.cpp
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+"    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
 " ---------------------------------------------------------------------
